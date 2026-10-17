@@ -6,6 +6,10 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A48A61F530835C0C007C5365 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A48A61F430835C0C007C5365 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A48A61DA308359D8007C5365 /* TCAPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -22,6 +26,7 @@
 		A48A61D7308359D8007C5365 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				A48A61F530835C0C007C5365 /* ComposableArchitecture in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -60,6 +65,9 @@
 				A48A61DC308359D8007C5365 /* TCAPractice */,
 			);
 			name = TCAPractice;
+			packageProductDependencies = (
+				A48A61F430835C0C007C5365 /* ComposableArchitecture */,
+			);
 			productName = TCAPractice;
 			productReference = A48A61DA308359D8007C5365 /* TCAPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -88,6 +96,9 @@
 			);
 			mainGroup = A48A61D1308359D8007C5365;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A48A61F330835C0C007C5365 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A48A61DB308359D8007C5365 /* Products */;
 			projectDirPath = "";
@@ -320,6 +331,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A48A61F330835C0C007C5365 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.26.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A48A61F430835C0C007C5365 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A48A61F330835C0C007C5365 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A48A61D2308359D8007C5365 /* Project object */;
 	validationLevel = 1;

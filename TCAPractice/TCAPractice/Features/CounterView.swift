@@ -13,6 +13,7 @@ struct CounterView: View {
 
     var body: some View {
         VStack(spacing: 24) {
+
             Text("\(store.count)")
                 .font(.system(size: 64, weight: .bold))
 
@@ -22,7 +23,7 @@ struct CounterView: View {
                 } label: {
                     Image(systemName: "minus")
                         .font(.title)
-                        .frame(width: 30, height: 30)
+                        .frame(width: 60, height: 60)
                 }
 
                 Button {
@@ -30,7 +31,7 @@ struct CounterView: View {
                 } label: {
                     Image(systemName: "plus")
                         .font(.title)
-                        .frame(width: 30, height: 30)
+                        .frame(width: 60, height: 60)
                 }
             }
             .buttonStyle(.borderedProminent)
@@ -39,6 +40,34 @@ struct CounterView: View {
                 store.send(.resetButtonTapped)
             }
             .buttonStyle(.bordered)
+
+            Divider()
+
+            Button {
+                store.send(.fetchNumberButtonTapped)
+            } label: {
+                HStack {
+                    if store.isLoading {
+                        ProgressView()
+                    } else {
+                        Image(systemName: "dice")
+                    }
+
+                    Text(
+                        store.isLoading
+                        ? "숫자를 가져오는 중..."
+                        : "랜덤 숫자 가져오기"
+                    )
+                }
+            }
+            .buttonStyle(.borderedProminent)
+            .disabled(store.isLoading)
+
+            if let errorMessage = store.errorMessage {
+                Text(errorMessage)
+                    .foregroundStyle(.red)
+                    .font(.caption)
+            }
         }
         .padding()
     }

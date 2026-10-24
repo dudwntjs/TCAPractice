@@ -10,11 +10,27 @@
 		A48A61F530835C0C007C5365 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A48A61F430835C0C007C5365 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A44854E8308D213900F49D26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A48A61D2308359D8007C5365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A48A61D9308359D8007C5365;
+			remoteInfo = TCAPractice;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A44854E4308D213900F49D26 /* TCAPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48A61DA308359D8007C5365 /* TCAPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A44854E5308D213900F49D26 /* TCAPracticeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TCAPracticeTests;
+			sourceTree = "<group>";
+		};
 		A48A61DC308359D8007C5365 /* TCAPractice */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TCAPractice;
@@ -23,6 +39,11 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A44854E1308D213900F49D26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 		A48A61D7308359D8007C5365 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
@@ -36,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				A48A61DC308359D8007C5365 /* TCAPractice */,
+				A44854E5308D213900F49D26 /* TCAPracticeTests */,
 				A48A61DB308359D8007C5365 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A48A61DA308359D8007C5365 /* TCAPractice.app */,
+				A44854E4308D213900F49D26 /* TCAPracticeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +74,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A44854E3308D213900F49D26 /* TCAPracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A44854EA308D213900F49D26 /* Build configuration list for PBXNativeTarget "TCAPracticeTests" */;
+			buildPhases = (
+				A44854E0308D213900F49D26 /* Sources */,
+				A44854E1308D213900F49D26 /* Frameworks */,
+				A44854E2308D213900F49D26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A44854E9308D213900F49D26 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A44854E5308D213900F49D26 /* TCAPracticeTests */,
+			);
+			name = TCAPracticeTests;
+			productName = TCAPracticeTests;
+			productReference = A44854E4308D213900F49D26 /* TCAPracticeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A48A61D9308359D8007C5365 /* TCAPractice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A48A61E5308359D9007C5365 /* Build configuration list for PBXNativeTarget "TCAPractice" */;
@@ -82,6 +126,10 @@
 				LastSwiftUpdateCheck = 2700;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
+					A44854E3308D213900F49D26 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = A48A61D9308359D8007C5365;
+					};
 					A48A61D9308359D8007C5365 = {
 						CreatedOnToolsVersion = 27.0;
 					};
@@ -105,11 +153,17 @@
 			projectRoot = "";
 			targets = (
 				A48A61D9308359D8007C5365 /* TCAPractice */,
+				A44854E3308D213900F49D26 /* TCAPracticeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A44854E2308D213900F49D26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
 		A48A61D8308359D8007C5365 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
@@ -118,6 +172,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A44854E0308D213900F49D26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 		A48A61D6308359D8007C5365 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
@@ -125,7 +184,67 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A44854E9308D213900F49D26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A48A61D9308359D8007C5365 /* TCAPractice */;
+			targetProxy = A44854E8308D213900F49D26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A44854EB308D213900F49D26 /* Debug configuration for PBXNativeTarget "TCAPracticeTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6B47X24XTW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sun.TCAPracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCAPractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCAPractice";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		A44854EC308D213900F49D26 /* Release configuration for PBXNativeTarget "TCAPracticeTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6B47X24XTW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sun.TCAPracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCAPractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCAPractice";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
 		A48A61E3308359D9007C5365 /* Debug configuration for PBXProject "TCAPractice" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -314,6 +433,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A44854EA308D213900F49D26 /* Build configuration list for PBXNativeTarget "TCAPracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44854EB308D213900F49D26 /* Debug configuration for PBXNativeTarget "TCAPracticeTests" */,
+				A44854EC308D213900F49D26 /* Release configuration for PBXNativeTarget "TCAPracticeTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
 		A48A61D5308359D8007C5365 /* Build configuration list for PBXProject "TCAPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

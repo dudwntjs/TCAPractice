@@ -18,7 +18,7 @@ struct CounterFeature {
         var errorMessage: String?
     }
 
-    enum Action {
+    enum Action: Equatable {
         case incrementButtonTapped
         case decrementButtonTapped
         case resetButtonTapped
